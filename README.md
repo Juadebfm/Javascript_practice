@@ -29,4 +29,4 @@ foobar.singularize('phenomena')
 If I commit to this as I have committed to every other aspect of my frontend web development journey, I will solidly step into my dream of becoming a full stack developer soon.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[Juadebfm](https://jfme.netlify.app/)
