@@ -16,6 +16,14 @@
 
 <button type="button" onclick="funkify()">Click Me!</button>
 
+<button type="button" onclick="document.getElementById('demo1').innerHTML = new Date().toString()">Click Me To Display Date</button>
+<p id="demo1"></p>
+<br><br><br>
+<!-- NEW0 -->
+<h2>My Light Bulb Moment</h2>
+<p>Here, i am testing javascript changes to the value of the src (source) attribute</p>
+
+<!-- SCRIPT -->
 <script>
 function myFunctionTwo() {
   document.getElementById("demo").style.fontSize = "25px"; 
@@ -28,11 +36,29 @@ function funkify() {
     document.getElementById("body").style.textAlign = "center";
 }
 </script>
+
+<script>
+// LIGHT BULB
+// The logic
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "pic_bulboff.gif"
+  } else {
+    pic = "pic_bulbon.gif"
+  }
+  // calling the element
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img src="pic_bulboff.gif" width="100" height="180" alt="" id="myImage">
 <script>
 function myFunction() { 
   document.getElementById("demo").innerHTML = "Hello JavaScript!";
 }
 </script>
+<!-- SCRIPT END -->
 
 </body>
 </html>
