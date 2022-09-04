@@ -9,7 +9,6 @@
 <button type="button" onclick="myFunction()">Click Me!</button>
 
 <p id="demo">This is a demonstration.</p>
-
 <p id="demo">JavaScript can also change the style of an HTML element.</p>
 
 <button type="button" onclick="myFunctionTwo()">Click Me!</button>
@@ -34,6 +33,10 @@ function myFunctionTwo() {
 
 function funkify() {
     document.getElementById("body").style.textAlign = "center";
+}
+
+function center() {
+  document.getElementById("center").style.textAlign = 'center'
 }
 </script>
 
@@ -60,14 +63,6 @@ function light(sw) {
   <button type="button" onclick="light(1)">Light On</button>
   <button type="button" onclick="light(0)">Light Off</button>
 </p>
-
-
-
-
-
-
-
-
 <script>
 function myFunction() { 
   document.getElementById("demo").innerHTML = "Hello JavaScript!";
@@ -75,6 +70,49 @@ function myFunction() {
 </script>
 <!-- SCRIPT END -->
 
+<p id="here">Here is the practise i did</p>
+<button onclick="func()">Change</button>
+<script>  
+  function func() {
+    document.getElementById('here').innerHTML = 'Shut it'
+  }
+</script>
+
+
+<p id="changeSize">Change the size of this text using javascript</p>
+<button onclick="changeSize()">Click</button>
+
+<script>
+function changeSize() {
+  document.getElementById('changeSize').style.fontSize = '35px'
+}
+</script>
+
+<p id="hideMe">This text will be hidden</p>
+<button onclick="hideMe()">Click Here</button>
+<script>
+  function hideMe() {
+    document.getElementById('hideMe').style.display = "none"
+  }
+</script>
+
+<p id="calc">What Is 5 + 6</p>
+<button onclick="calc()">Calculate</button>
+
+<script>
+  function calc() {
+    document.getElementById('calc').innerHTML = 5 + 6
+  }
+</script>
+
+<p id="calc2">What Is 5 + 6</p>
+<button onclick="calc2()">Calculate</button>
+
+<script>
+  function calc2() {
+    document.write(5 + 6)
+  }
+</script>
 </body>
 </html>
 
