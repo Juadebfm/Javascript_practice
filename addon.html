@@ -4,39 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
     <title>Document</title>
-    <style>
-        input {
-            padding: 10px;
-            width: 30px;
-        }
-        .input {
-            margin-right: 1rem;
-        }
-        .button {
-            width: 50px;
-        }
-        .in {
-            margin-bottom: 1rem;
-        }
-    </style>
 </head>
 <body>
-    <label class="input" for="A">A</label>
-    <input class="in" type="text" id="box1"><br>
-    <label class="input" for="B">B</label>
-    <input class="in" type="text" id="box2"><br>
-    <label for="Ans">Ans</label>
-    <input type="text" id="+"><br>
-    <input class="button" type="button" value="Add" onclick="sum()" ><br>
+<main>
+    <!-- ADDITION -->
+    <section class="addition">
+        <h1>Addition</h1>
+        <!-- A Input -->
+        <label class="input" for="A">A</label>
+        <input class="in" type="text" id="box1"><br>
+        <!-- B Input -->
+        <label class="input" for="B">B</label>
+        <input class="in" type="text" id="box2"><br>
+        <!-- ANS -->
+        <label class="ans" for="Ans">Ans</label>
+        <input type="text" id="+"><br>
+        <div>
+            <input class="button" type="button" value="Add" onclick="sum()" ><br>
+        </div>
+    </section>
 
+    <!-- SUBTRACTION -->
+    <section class="subtract">
+        <h1>Subtraction</h1>
+        <!-- A input -->
+        <label class="input" for="A">A</label>
+        <input class="in" type="text" id="box3"><br>
+        <!-- B Input -->
+        <label class="input" for="B">B</label>
+        <input class="in" type="text" id="box4"><br>
+        <!-- ANS -->
+        <label class="ans" for="Ans">Ans</label>
+        <input type="text" id="-"><br>
+        <div>
+            <input class="button" type="button" value="Subtract" onclick="minus()" ><br>
+        </div>
+    </section>
+
+    <!-- MULTIPLICATION -->
+    <section class="multiply">
+        <h1>Multiply</h1>
+        <!-- A input -->
+        <label class="input" for="A">A</label>
+        <input class="in" type="text" id="box5"><br>
+        <!-- B Input -->
+        <label class="input" for="B">B</label>
+        <input class="in" type="text" id="box6"><br>
+        <!-- ANS -->
+        <label class="ans" for="Ans">Ans</label>
+        <input type="text" id="*"><br>
+        <div>
+            <input class="button" type="button" value="Multiply" onclick="mult()" ><br>
+        </div>
+    </section>
+
+    <!-- Division -->
+    <section class="division">
+        <h1>Division</h1>
+        <!-- A input -->
+        <label class="input" for="A">A</label>
+        <input class="in" type="text" id="box7"><br>
+        <!-- B Input -->
+        <label class="input" for="B">B</label>
+        <input class="in" type="text" id="box8"><br>
+        <!-- ANS -->
+        <label class="ans" for="Ans">Ans</label>
+        <input type="text" id="d"><br>
+        <div>
+            <input class="button" type="button" value="Division" onclick="div()" ><br>
+        </div>
+    </section>
+
+</main>
     <script>
+        // ADDITION
         function sum() {
             let box1 = document.getElementById('box1').value;
             let box2 = document.getElementById('box2').value;
             let sum = Number(box1) + Number(box2);
             document.getElementById('+').value = sum;
         }
+
+        // SUBTRACTION
+        function minus() {
+            let box3 = document.getElementById('box3').value;
+            let box4 = document.getElementById('box4').value;
+            let sub = Number(box3) - Number(box4);
+            document.getElementById('-').value = sub;
+        }
+
+        //Multiply
+        function mult() {
+            let box5 = document.getElementById('box5').value;
+            let box6 = document.getElementById('box6').value;
+            let mult = Number(box6) * Number(box5);
+            document.getElementById('*').value = mult;
+
+        }
+        //Division
+        function div() {
+            let box7 = document.getElementById('box7').value;
+            let box8 = document.getElementById('box8').value;
+            let div = Number(box7) / Number(box8);
+            document.getElementById('d').value = div;
+        }
+
     </script>
 </body>
 </html>
