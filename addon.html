@@ -80,8 +80,21 @@
         </div>
     </section>
 
+    <section class="new">
+        <h1>Javascript Variables</h1>
+        <p>You can declare variables in one statement.</p>
+        <p id="demo"></p>
+        <button onclick="getDetails()">Click</button>
+    </section>
+
 </main>
     <script>
+        //NEW 
+        let person = "Julius", carName = "Mustang", price = "400000$"
+
+        function getDetails() {
+            document.getElementById("demo").innerHTML = person + ", " + carName + ", " + price;
+        }
         // ADDITION
         function sum() {
             let box1 = document.getElementById('box1').value;
