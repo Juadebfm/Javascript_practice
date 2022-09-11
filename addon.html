@@ -11,6 +11,23 @@
     <title>Document</title>
 </head>
 <body>
+    <span style="font-size: 2rem;padding-bottom: 2rem;text-align: center;color: white;">Javascript Basic Operators</span>
+    <p>The assignment operator += can concatenate strings</p>
+
+    <p id="conca"></p>
+    <button onclick="conca()">Click Me</button>
+    <button onclick="concat()">Color</button>
+    <script>
+        function conca() {
+        let text1 = "What a very day";
+        text1 += "nice day";
+        document.getElementById("conca").innerHTML = text1;
+        }
+        function concat() {
+            document.getElementById("conca").style.color = "#ffffff";
+        }
+    </script>
+
 <main>
     <!-- ADDITION -->
     <section class="addition">
