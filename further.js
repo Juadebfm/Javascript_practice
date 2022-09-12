@@ -19,3 +19,13 @@ document.getElementById('demo2').innerHTML = (z == y) + "<br>" + (z == d);
 
 const cars = ['volvo', 'Honda', 'Mustang', 'Toyota'];
 document.getElementById('demo3').innerText = cars[0] + " " + cars[1] + " " + cars[2] + " " + cars[3];
+
+const person = {
+    firstName: "Femi",
+    lastName: "Adebowale",
+    age: "32",
+    eyeColor: "Brown eyes",
+    skills: "Frontend Web Developer"
+}
+
+document.getElementById('demo4').innerHTML = person.firstName + " is " + person.age + " years old," + " a " + person.skills + " with " + person.eyeColor + ".";
