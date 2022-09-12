@@ -6,7 +6,8 @@
         }
         body {
             font-family: 'Raleway', sans-serif;
-            background-color: rgb(52, 49, 49);
+            background-color: rgb(164, 159, 159);
+            text-align: center;
         }
         main {
             text-align: center;
