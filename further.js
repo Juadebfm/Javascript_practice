@@ -29,3 +29,18 @@ const person = {
 }
 
 document.getElementById('demo4').innerHTML = person.firstName + " is " + person.age + " years old," + " a " + person.skills + " with " + person.eyeColor + ".";
+
+
+var v = myfunction(4, 3);
+document.getElementById('democ').innerHTML = v;
+
+function myfunction(a, b) {
+    return a * b;
+}
+
+function toCelcius(f) {
+    return (5/9) * (f-32);
+}
+
+document.getElementById('fToC').innerHTML = "The temperature is " + toCelcius(77) + " Celcius";
+
