@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #efefef;
+  font-family: monospace;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  padding: auto 20px auto 20px;
+  display: flex;
+  width: 100vh;
+}
+
+.heading {
+  text-align: center;
+  margin: 1rem 0 0;
+}
+
+.description {
+  text-align: center;
+  color: gray;
+  margin: 0 0 2rem;
+}
+
+.panel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 80vh;
+  width: 80%;
+  color: #ffffff;
+  cursor: pointer;
+  flex: 0.5;
+  margin: 10px;
+  position: relative;
+  transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+  font-size: 25px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  opacity: 0;
+}
+
+.panel.active {
+  flex: 7;
+}
+
+.panel.active h3 {
+  opacity: 1;
+  transition: opacity 0.7s ease-in 0.4s;
+}
+
+.panel:nth-child(1) {
+  background-image: url(https://wallpaperaccess.com/full/8174684.jpg);
+}
+.panel:nth-child(2) {
+  background-image: url(https://wallpaperaccess.com/full/8174697.jpg);
+}
+.panel:nth-child(3) {
+  background-image: url(https://wallpaperaccess.com/full/8174705.png);
+}
+.panel:nth-child(4) {
+  background-image: url(https://wallpaperaccess.com/full/2987550.jpg);
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 100vw;
+  }
+  .panel:nth-child(4),
+  .panel:nth-child(5) {
+    display: none;
+  }
+}
