@@ -27,18 +27,16 @@
 Status
 
 <h4 align="center">
-	🚧  Javascript_practice 🚀 Personal Continous Practices  🚧
+	🚧  Javascript_practice 🚀 Personal JavaScript Practices  🚧
 </h4>
 
 <hr>
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
-  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
+  <a href="#sparkles-features">Folders</a> &#xa0; | &#xa0;
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
-  <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
-  <a href="#memo-license">License</a> &#xa0; | &#xa0;
   <a href="https://github.com/Juadebfm" target="_blank">Author</a>
 </p>
 
@@ -46,7 +44,7 @@ Status
 
 ## :dart: About
 
-Describe your project
+A 30-Day Coding Practice for JavaScripts most used concepts. I always come back to this codebase.
 
 ## :sparkles: Folders
 
@@ -63,10 +61,6 @@ The following tools were used in this project:
 ## :white_check_mark: Requirements
 
 Before starting :checkered_flag:, you need to have an IDE like [VSCODE](https://code.visualstudio.com/download) installed.
-
-## :checkered_flag: Starting
-
-Made with :heart: by <a href="https://github.com/Juadebfm" target="_blank">Juadebfm</a>
 
 &#xa0;
 
