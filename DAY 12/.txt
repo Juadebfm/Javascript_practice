@@ -1,0 +1,1 @@
+DAY 12 was 20 days after day 11. I have been so lazy and not practicing javascript daily
