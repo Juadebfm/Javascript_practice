@@ -12,10 +12,10 @@ const people = [
 ];
 
 const inventors = [
-  { firstName: "Wes", secondName: "Baloo", year: 1988 },
-  { firstName: "Kait", secondName: "Baloo", year: 1986 },
-  { firstName: "Irv", secondName: "Baloo", year: 1970 },
-  { firstName: "Lux", secondName: "Baloo", year: 2015 },
+  { firstName: "Wes", secondName: "Baloo", year: 1988, passed: "2022" },
+  { firstName: "Kait", secondName: "Baloo", year: 1986, passed: "2035" },
+  { firstName: "Irv", secondName: "Baloo", year: 1970, passed: "2012" },
+  { firstName: "Lux", secondName: "Baloo", year: 2015, passed: "2080" },
 ];
 
 const comments = [
@@ -42,3 +42,11 @@ console.table(fullNames);
 const ordered = inventors.sort((a, b) => (a.year > b.year ? 1 : -1));
 
 console.table(ordered);
+
+//sort
+const oldest = inventors.sort(function (a, b) {
+  const lastGuy = a.passed - a.year;
+  const nextGuy = b.passed - b.year;
+  return lastGuy > nextGuy ? -1 : 1;
+});
+console.table(oldest);
